@@ -216,7 +216,7 @@
 
   // Websocket
 
-  var socket: WebSocket = new WebSocket("ws://127.0.0.1:8080/ws?username="+props.username+"&chatroom_id="+props.chatroom_id)
+  var socket: WebSocket = new WebSocket("ws://127.0.0.1:8001/ws?username="+props.username+"&chatroom_id="+props.chatroom_id)
   const openSocket = () => {
     socket.onopen = socket_onopen
     socket.onclose = socket_onclose
